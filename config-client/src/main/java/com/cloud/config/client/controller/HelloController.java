@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api")
 public class HelloController {
 
-    @Value("${message}")
+    @Value("${message: Default Hello}")
     String welcomeText;
 
     @GetMapping(value = "/welcome")
